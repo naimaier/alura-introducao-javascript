@@ -21,12 +21,14 @@ for (i = 0; i < pacientes.length; i++) {
         console.log('Peso inválido!')
         tdPeso.textContent = 'Peso inválido!'
         pesoEhValido = false
+        paciente.classList.add('paciente-invalido')
     }
     
     if (altura <= 0 || altura >= 3.00) {
         console.log('Altura inválida!')
         tdAltura.textContent = 'Altura inválida!'
         alturaEhValida = false
+        paciente.classList.add('paciente-invalido')
     }
     
     if (pesoEhValido && alturaEhValida) {
